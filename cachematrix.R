@@ -1,8 +1,8 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Functions to retrieve a cached matrix if it has already been
+## inverted or to invert it and cache it if not
 
-## Write a short comment describing this function
-
+## Creating get and set functions for the matrix
+## 
 makeCacheMatrix <- function(x = matrix()) {
         m <- NULL
         set<-function(y){
@@ -32,8 +32,9 @@ makeCacheMatrix <- function(x = matrix()) {
 #              getmean = getmean)
 # }
 
-## Write a short comment describing this function
 
+
+## Write a short comment describing this function
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
         m <- x$getmatrix()
